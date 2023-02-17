@@ -14,26 +14,27 @@
         <div>
             <img src="./vault4.jpeg" alt="">
         </div>
-        <div class="bg-stone-400 py-5 px-10 text-center space-y-4">
-            <h1>Income</h1>
+        <div class="bg-stone-100 py-5 px-10 text-center space-y-4">
+            <h1 class="font-bold text-lg">Income</h1>
             <span>Income:</span>
-            <input type="number" class="bg-green-200 w-40">
-            <h1>Expenses</h1>
+            <input type="text" class="bg-stone-300 w-40 mx-2 p-1" id="income" placeholder="Enter your income">
+            <h1 class="font-bold text-lg">Expenses</h1>
             <span>Food:</span>
-            <input type="text" name="" id="" class="w-40"> <br>
+            <input type="text" name="" id="food" class="bg-stone-300 w-40 mx-2 p-1" placeholder="Enter food expenses"> <br>
             <span>Rent:</span>
-            <input type="text" name="" id="" class="w-40"> <br>
+            <input type="text" name="" id="rent" class="bg-stone-300 w-40 mx-2 p-1" placeholder="Enter Rent expense"> <br>
             <span>Cloths:</span>
-            <input type="text" name="" id="" class="w-40"> <br>
-            <button>Calculate</button>
-            <h1>Total Expenses: <span>00</span></h1>
-            <h1>Balance: <span>00</span></h1>
-            <h1>Save</h1>
-            <input type="text" name="" id=""> % 
-            <button>Save</button> <br>
-            <h1>Saving Amount:<span>00</span></h1>
-            <h1>Remaining Amount: <span>00</span></h1>
+            <input type="text" name="" id="cloths" class="bg-stone-300 w-40 mx-2 p-1 rounded-sm" placeholder="Enter cloths expense"> <br>
+            <button class="bg-blue-500 px-4 py-2 text-white font-bold rounded-md" id="calculate">Calculate</button>
+            <h1 class="font-bold text-xl">Total Expenses: <span id="total-expense">00</span></h1>
+            <h1 class="font-bold text-xl">Balance: <span id="net-balance">00</span></h1>
+            <span>Save:</span>
+            <input type="text" name="" id="" class="w-20 mx-2"> % 
+            <button class="bg-blue-500 font-semibold py-0.5 px-2 text-white rounded-sm">Save</button> <br>
+            <h1 class="font-bold text-xl">Saving Amount:<span>00</span></h1>
+            <h1 class="font-bold text-xl">Remaining Amount: <span>00</span></h1>
         </div>
     </section>
+    <script src="./js/calculate.js"></script>
 </body>
 </html>
